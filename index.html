@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    
+    <title>Din politiske placering</title>
+</head> 
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Tag testen: Din politiske placering</h1>
+            <p><em>Svar på alle spørgsmål neden for og se din placering i det politiske rum. Forsøg at svare på alle spørgsmålene så godt du kan, brug kun "Ved ikke" hvis du slet ikke kan svare på spørgmålet. God fornøjelse!</em></p>
+            
+                <h2>Spørgsmål 1 - Sociale reformer</h2>
+                <h5>Læs nedenstående udsagn og angiv hvem du er mest enig med</h5>
+                <p>A: Man er gået for langt med sociale reformer her i landet. Folk burde mere end nu klare sig uden sociale sikringer og bidrag fra samfundet.<br>B: De sociale reformer, som er gennemført i vores land, bør opretholdes i mindst samme omfang som nu.
+                    </p>
+                <input type="radio" name="q1" value=4> Mest enig med A<br>
+                <input type="radio" name="q1" value=0> Ikke enig med nogen af parterne<br>
+                <input type="radio" name="q1" value=-4> Mest enig med B<br>
+                <input type="radio" name="q1" value=na> Ved ikke
+                
+                <h2>Spørgsmål 2 - Forskel i levestandard og indtægter</h2>
+                <h5>Læs nedenstående udsagn og angiv hvem du er mest enig med</h5>
+                <p class="under">A: Forskellene i indtægter og levestandard er stadig for store i vores land, derfor burde folk med lavere indtægter få en hurtigere forbedring af levestandarden end dem med højere indtægter. <br>B: Indtægtsudjævningen er gået tilstrækkelig langt. De indtægtsforskelle, som endnu findes, bør stort set bibeholdes.
+                    </p>
+                <input type="radio" name="q2" value="-4"> Mest enig med A<br>
+                <input type="radio" name="q2" value="0"> Ikke enig med nogen af parterne<br>
+                <input type="radio" name="q2" value="4"> Mest enig med B<br>
+                <input type="radio" name="q2" value="na"> Ved ikke
+
+                <h2>Spørgsmål 3 - Statens kontrol over erhvervslivet</h2>
+                <h5>Læs nedenstående udsagn og angiv hvem du er mest enig med</h5>
+                <p>A: Forretnings- og industrifolk bør i større grad have lov til at bestemme over deres egne forretninger.<br>B: Staten bør kontrollere og samordne erhvervslivet. Den statslige kontrol bør i hvert fald ikke være mindre, end den er i dagens Danmark.</p>
+                <input type="radio" name="q3" value="4"> Mest enig med A<br>
+                <input type="radio" name="q3" value="0"> Ikke enig med nogen af parterne<br>
+                <input type="radio" name="q3" value="-4"> Mest enig med B<br>
+                <input type="radio" name="q3" value="na"> Ved ikke
+                
+                <h2>Spørgsmål 4 - Beskatning af høje indtægter</h2>
+                <h5>Læs nedenstående udsagn og angiv hvor enig eller uenig du er i udsagnet</h5>
+                <p>Høje indtægter burde beskattes hårdere, end tilfældet er i dag.</p>
+                <input type="radio" name="q4" value="-4"> Helt enig<br>
+                <input type="radio" name="q4" value="-2"> Nærmest enig<br>
+                <input type="radio" name="q4" value="0"> Hverken enig eller uenig<br>
+                <input type="radio" name="q4" value="2"> Nærmest uenig<br>
+                <input type="radio" name="q4" value="4"> Helt uenig<br>
+                <input type="radio" name="q4" value="na"> Ved ikke
+                <h2>Klar til at beregne?</h2>
+                <button class="beregn_Score">Beregn</button>
+            <p><br></p>
+            <p class="din_score"></p>
+            <div class="fordeling">
+                <p class="din_fordeling">|</p>
+            </div>
+        </div>
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
