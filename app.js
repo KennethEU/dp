@@ -28,26 +28,26 @@ var beregnScore = function() {
     score = 0;
     notchecked = 0;
 
-    for (var sp = 0, length = sporgsmal.length; sp < length; sp++) {
+    for (var sp = 0; sp < sporgsmal.length; sp++) {
 
-        var q = document.getElementsByName(sporgsmal[sp]);
+        var q = document.getElementsByName(sporgsmal[sp]); // Henter hvert spørgsmål
         
-            for (var i = 0, qlength = q.length; i < qlength; i++) {
+            for (var i = 0; i < q.length; i++) { // Gennemgår hvert svar i spørgsmålet
                 if (q[i].checked) {
                     // do whatever you want with the checked radio
                     console.log(q[i].value);
-                    if (q[i].value === 'na') {
-                        notchecked++;
+                    if (q[i].value === 'na') { // Hvis der er svaret ved ikke
+                        notchecked++;          // så læg en til "notchecked"
                     } else {
-                    score += parseInt(q[i].value);
+                    score += parseInt(q[i].value); // Hvis der er svaret, så tilføj den numeriske værdi af svaret til scoren
                     }
                     
                 } else {
-                    notchecked++;
+                    notchecked++;  // Hvis knappen ikke er valget, så læg en til "notchecked" (Selv om der er svaret så på spørgsmålet, så er de øvrige svarkategorier stadig tomme og lægges derfor til)
                 }
             }
     }
-    notchecked = notchecked - 14;
+    notchecked = notchecked - 14; // Trækker 14 fra, så det giver 0, hvis man har svaret på alle spørgsmål
     adj = 0; 
     if (notchecked === 3) {
         adj = 4;
