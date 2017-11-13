@@ -34,7 +34,6 @@ var beregnScore = function() {
         
             for (var i = 0; i < q.length; i++) { // Gennemgår hvert svar i spørgsmålet
                 if (q[i].checked) {
-                    // do whatever you want with the checked radio
                     console.log(q[i].value);
                     if (q[i].value === 'na') { // Hvis der er svaret ved ikke
                         notchecked++;          // så læg en til "notchecked"
